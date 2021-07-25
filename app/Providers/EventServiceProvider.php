@@ -2,10 +2,13 @@
 
 namespace App\Providers;
 
+use App\Events\AccountError;
+use App\Events\ATMError;
+use App\Events\FundError;
+use App\Listeners\ATMActionListener;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
-use Illuminate\Support\Facades\Event;
 
 class EventServiceProvider extends ServiceProvider
 {
@@ -18,6 +21,15 @@ class EventServiceProvider extends ServiceProvider
         Registered::class => [
             SendEmailVerificationNotification::class,
         ],
+        AccountError::class => [
+            ATMActionListener::class
+        ],
+        ATMError::class => [
+            ATMActionListener::class
+        ],
+        FundError::class => [
+            ATMActionListener::class
+        ]
     ];
 
     /**
