@@ -13,7 +13,7 @@ This should be an array of strings like expected there.
 
 I have not put any HTTP or console endpoints into the app.
 
-So you'd know, I am mentoring a friend and I used this project as an opportunity to explain some things about Laravel and PHP, so I totally did not use Git. 
+So you'd know, I am mentoring a friend and I used this project as an opportunity to explain some things about Laravel and PHP, so I totally did not use Git as I was so consumed with going over all the details of what I was doing. 
 
 
 Task 3
