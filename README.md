@@ -1,5 +1,6 @@
 Task 1
-
+open public/index.html.
+I would have extracted any css/js into other files, but for the sake of simplicity I have included it all in.
 
 Task 2
 As soon as you download this project from git, you should run 
